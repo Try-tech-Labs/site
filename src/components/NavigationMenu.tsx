@@ -2,13 +2,22 @@ import React from 'react';
 
 import '../styles/components/NavigationMenu.css';
 
-export default function NavigationMenu(){
+import SiteLogo from '../components/SiteLogo';
+
+interface NavigationProps {
+    useLogo: boolean
+}
+
+export default function NavigationMenu(props: NavigationProps) {
     return (
-        <div className="menu">
-            <a href="">Home</a>
-            <a href="">About us</a>
-            <a href="">Our tries</a>
-            <a href="">Contribute</a>
+        <div id="navigation-menu">
+            {props.useLogo && (<SiteLogo className="site_menu" width={162} height={70} />)}
+            <div className="menu">
+                <a href="#page-landing">Home</a>
+                <a href="#page-developers">About us</a>
+                <a href="">Our tries</a>
+                <a href="">Contribute</a>
+            </div>
         </div>
     )
 }

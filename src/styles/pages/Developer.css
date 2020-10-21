@@ -1,0 +1,13 @@
+#page-developers {
+    height: 100vh;
+    background: linear-gradient(180deg, #2D0A31 0%, #000000 100%);
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+#page-developers .developers{
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+}
