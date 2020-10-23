@@ -30,7 +30,7 @@ describe('DeveloperCard', () => {
         cleanup()
     }) 
 
-    it('renders wit correct information', () => {
+    it('renders with correct information', () => {
         const { wrapper } = setup()
         const { getByText, getByTestId } = wrapper
         getByText('Rod')

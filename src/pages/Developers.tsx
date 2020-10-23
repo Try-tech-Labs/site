@@ -22,7 +22,6 @@ export default function Developers() {
 
     useEffect(() => {
         getDevelopers().then(developers => {
-            console.log(developers)
             setDevelopers(developers);
         })
     }, []);
