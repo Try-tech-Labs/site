@@ -1,7 +1,7 @@
 import React from 'react'
 import '@testing-library/jest-dom/extend-expect'
 
-import { cleanup, getByText, render } from '@testing-library/react'
+import { cleanup, render } from '@testing-library/react'
 
 import NavigationMenu from '../NavigationMenu'
 
