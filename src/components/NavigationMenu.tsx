@@ -11,7 +11,7 @@ interface NavigationProps {
 export default function NavigationMenu(props: NavigationProps) {
     return (
         <div id="navigation-menu">
-            {props.useLogo && (<SiteLogo className="site_menu" width={162} height={70} />)}
+            {props.useLogo && (<SiteLogo data-testid="logo" className="site_menu" width={162} height={70} />)}
             <div className="menu">
                 <a href="#page-landing">Home</a>
                 <a href="#page-developers">About us</a>

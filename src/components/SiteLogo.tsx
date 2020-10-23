@@ -11,6 +11,6 @@ interface LogoProperties {
 
 export default function SiteLogo(props: LogoProperties){
     return (
-        <img src={LogoImage} className={props.className} alt="Web site logo image" width={props.width} height={props.height} />
+        <img data-testid="site-logo" src={LogoImage} className={props.className} alt="Web site logo image" width={props.width} height={props.height} />
     )
 }

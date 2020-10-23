@@ -17,23 +17,45 @@ interface DeveloperProps{
 }
 
 export default function DeveloperCard(props: DeveloperProps){
+
+    const getValidDeveloperSkills = (skills:any) => {
+        console.log(skills)
+        if(skills){
+            const string_skills = skills.map((skill:string) => {
+                return skill+" "
+            })
+            return string_skills
+        }
+        return "N/A"
+    }
+
+    const getValidDeveloperName = (name:any) => {
+        return name ? name : "N/A"
+    }
+
+    const getValidDeveloperDescription = (description: any) => {
+        return description ? description :  "N/A"
+    }
+
+    const getValidAvatarImage = (avatar_image:any) => {
+        return avatar_image ? avatar_image : "http://trytechlabs.com/images/developer.png"
+    }
+
     return (
         <div className="card">
             <div className="avatar_and_links">
-                <img className="avatar" src={props.avatar_image} alt="Developer avatar image"/>
+                <img data-testid="avatar" className="avatar" src={getValidAvatarImage(props.avatar_image)} alt="Developer avatar image"/>
                 <div className="social_media">
-                    <a target="_blank" href={props.twitter_url}><img src={Twitter} alt="Twitter logo"/></a>
-                    <a target="_blank" href={props.linkedin_url}><img src={LinkedIn} alt="LinkedIn logo"/></a>
-                    <a target="_blank" href={props.github_url}><img src={Github} alt="Githubt logo"/></a>
+                    <a data-testid="twitter-link" target="_blank" href={props.twitter_url}><img src={Twitter} alt="Twitter logo"/></a>
+                    <a data-testid="linkedin-link" target="_blank" href={props.linkedin_url}><img src={LinkedIn} alt="LinkedIn logo"/></a>
+                    <a data-testid="github-link" target="_blank" href={props.github_url}><img src={Github} alt="Githubt logo"/></a>
                 </div>
             </div>
-            <h1>{props.name}</h1>
-            <p>{props.description}</p>
+            <h1 data-testid="name">{getValidDeveloperName(props.name)}</h1>
+            <p>{getValidDeveloperDescription(props.description)}</p>
             <div className="skills">
                 <label htmlFor="skills">Main skills:</label> 
-                <span id="skills">{props.development_skills.map(skill => {
-                    return skill+" "
-                })}</span>
+                <span data-testid="skills" id="skills">{getValidDeveloperSkills(props.development_skills)}</span>
             </div>
         </div>
     )   
