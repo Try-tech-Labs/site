@@ -19,7 +19,6 @@ interface DeveloperProps{
 export default function DeveloperCard(props: DeveloperProps){
 
     const getValidDeveloperSkills = (skills:any) => {
-        console.log(skills)
         if(skills){
             const string_skills = skills.map((skill:string) => {
                 return skill+" "

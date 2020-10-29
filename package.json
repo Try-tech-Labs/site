@@ -15,7 +15,7 @@
   "scripts": {
     "start": "react-scripts start",
     "build": "react-scripts build",
-    "test": "react-scripts test",
+    "test": "react-scripts test --env=jsdom-fourteen",
     "eject": "react-scripts eject"
   },
   "eslintConfig": {
@@ -34,7 +34,9 @@
     ]
   },
   "devDependencies": {
+    "@types/jest": "^24.9.0",
     "@types/react": "^16.9.53",
-    "@types/react-dom": "^16.9.8"
+    "@types/react-dom": "^16.9.8",
+    "jest": "^24.9.0"
   }
 }

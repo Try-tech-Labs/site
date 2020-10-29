@@ -6,7 +6,7 @@ import DeveloperCard from '../components/DeveloperCard';
 
 import getDevelopers from '../services/DeveloperService';
 
-interface DeveloperProps{
+interface DeveloperProps {
     name: string,
     avatar_image: string,
     description: string,
@@ -29,19 +29,21 @@ export default function Developers() {
     return (
         <div id="page-developers">
             <div className="developers">
-                {developers.map(developer => {
-                    return (
-                        <DeveloperCard
-                            key={developer.name}
-                            name={developer.name}
-                            avatar_image={developer.avatar_image}
-                            description={developer.description}
-                            twitter_url={developer.twitter_url}
-                            linkedin_url={developer.linkedin_url}
-                            github_url={developer.github_url}
-                            development_skills={developer.development_skills} />
-                    )
-                })}
+                {developers && (
+                    developers.map(developer => {
+                        return (
+                            <DeveloperCard
+                                key={developer.name}
+                                name={developer.name}
+                                avatar_image={developer.avatar_image}
+                                description={developer.description  || "Nothing to say about me :)" }
+                                twitter_url={`https://twitter.com/${developer.twitter_url || ""}`}
+                                linkedin_url={`${developer.linkedin_url || 'https://linkedin.com/'}`}
+                                github_url={developer.github_url}
+                                development_skills={developer.development_skills} />
+                        )
+                    })
+                )}
             </div>
         </div>
     )

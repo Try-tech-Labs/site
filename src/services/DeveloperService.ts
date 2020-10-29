@@ -2,14 +2,14 @@ import { Octokit } from "@octokit/rest";
 
 const octokit = new Octokit({ auth: process.env.REACT_APP_GITHUB_AUTH_TOKEN });
 
-async function getUserRepositories(userName: string){
+const getUserRepositories = async (userName: string) => {
     const response = await octokit.repos.listForUser({
         username: userName,
     });
     return response.data
 }
 
-async function getLanguages(userName: string){
+const getLanguages = async (userName: string) =>{
     let repositories = await getUserRepositories(userName)
     const languages = Promise.all(
         repositories.map(async (repository: { language: any; }) => {
@@ -20,7 +20,7 @@ async function getLanguages(userName: string){
     return Array.from(new Set(await languages)).filter(Boolean)
 }
 
-async function getOrganizationMembersName(organization:string){
+const getOrganizationMembersName = async (organization:string) => {
     const response = await octokit.orgs.listMembers({
         org: organization,
       });
@@ -34,20 +34,20 @@ async function getOrganizationMembersName(organization:string){
     });
 }
 
-async function getUserData(userName:string){
+const getUserData= async (userName:string) => {
     const response = await octokit.users.getByUsername({
         username: userName,
     })
     return response.data;
 }
 
-function getLinkedinLink(text:string){
+const getLinkedinLink = (text:string) => {
     const link_start = text.search('https://')
     const str = text.substring(link_start, text.length);
     return str.includes("http") ? str : "https://linkedin.com"
 }
 
-function removeBioLinks(bio:string){
+const removeBioLinks = (bio:string) => {
     if(!bio)
         return bio
     const link_start = bio.search('https://')
@@ -57,9 +57,9 @@ function removeBioLinks(bio:string){
     return bio 
 }
 
-export default async function getDevelopers(){
+const getDevelopers =  async () => {
     const org_members = await getOrganizationMembersName("Try-tech-Labs");
-     let developers = Promise.all(
+    let developers = Promise.all(
         org_members.map(async (member) => {
             const developerData = await getUserData(member);
             let repositorieLanguages = await getLanguages(member)
@@ -68,8 +68,8 @@ export default async function getDevelopers(){
             const developer = {
                 "name": developerData.name,
                 "avatar_image": developerData.avatar_url,
-                "description": bio || "Nothing to say about me :)" ,
-                "twitter_url": ("https://twitter.com/"+(developerData.twitter_username || "")),
+                "description": bio,
+                "twitter_url": developerData.twitter_username,
                 "linkedin_url": linkedin_url,
                 "github_url": developerData.html_url,
                 "development_skills": repositorieLanguages
@@ -79,3 +79,6 @@ export default async function getDevelopers(){
     )
     return developers;
 }
+
+
+export default getDevelopers;
