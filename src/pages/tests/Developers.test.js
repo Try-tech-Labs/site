@@ -6,7 +6,7 @@ import { cleanup, render, waitFor } from '@testing-library/react'
 import Developers from '../Developers'
 
 import getDevelopers from '../../services/DeveloperService'
-import developers from '../../services/tests/mocks/developers'
+import developers from './mocks/developers'
 
 const setup = () => {
 
