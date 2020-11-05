@@ -1,0 +1,58 @@
+.card {
+    width: 360px;
+    height: 560px;
+    background: #FFFFFF;
+    color: #000;
+    border-radius: 25px;
+    margin: 0 40px 0 40px;
+    text-align: justify;
+}
+
+.card .avatar_and_links .social_media{
+    display: grid;
+    grid-template-rows: repeat(3, 1fr);
+    align-items: center;
+    justify-content: right;
+    margin-right: 32px;
+    width: 64px;
+}
+
+.card .avatar_and_links{
+    display: grid;
+    grid-template-columns: 3fr 1fr;
+}
+
+.card .avatar_and_links .avatar{
+    padding: 10px;
+    width: 219px;
+    border-radius: 50%;
+}
+
+.card .social_media img{
+    width: 61px;
+    height: 64px;
+    margin: 10px 0 10px 0;
+}
+
+.card h1 {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 10px;
+}
+
+.card p {
+    width: 325px;
+    margin: 30px auto;
+}
+
+.card .skills{
+    align-items: center;
+    display: flex;
+    justify-content: center;
+    padding: 10px;
+}
+
+.card .skills label{
+    font-weight: bolder;
+}
