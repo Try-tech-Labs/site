@@ -3,16 +3,16 @@ import React from 'react';
 import '../styles/pages/Landing.css'
 
 import SiteLogo from '../components/SiteLogo';
-import BackgroundvectorDetail from '../images/BackgroundVector1.svg';
-import BackgroundvectorDetail2 from '../images/BackgroundVector2.svg';
+import BackgroundTopDetail from '../images/BackgroundTopLeftDetail.svg';
+import BackgroundBottomDetail from '../images/BackgroundBottomRightDetail.svg';
 
 import Developer from '../images/Developer.svg';
 
 function Landing() {
     return (
         <div id="page-landing">
-            <img src={BackgroundvectorDetail} alt="background top detail" className="background-top-detail"/>
-            <img src={BackgroundvectorDetail2} alt="background bottom detail" className="background-bottom-detail"/>
+            <img src={BackgroundTopDetail} alt="background top detail" className="background-top-detail"/>
+            <img src={BackgroundBottomDetail} alt="background bottom detail" className="background-bottom-detail"/>
             <div className="content-wrapper">
                 <main>
                     <div className="main-page-logo">

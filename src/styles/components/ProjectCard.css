@@ -1,0 +1,17 @@
+.card_body {
+    height: 100%;
+    align-items: center;
+    position: relative;
+    justify-content: center;
+    display: flex; 
+}
+
+
+.description {
+    text-align: center;
+    height: 100%;
+}
+
+.description p {
+    margin-top: 5px;
+}
