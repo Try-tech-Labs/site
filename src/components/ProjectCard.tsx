@@ -53,6 +53,7 @@ export default function ProjectCard(props: ProjectProps){
     return (
         <ProjectCard>
             <div className="card_body">
+                <span>In progress</span>
                 <NameLabel><p>{props.name || "Soon"}</p></NameLabel>
                 <CardBottom>
                     <div className="description">
