@@ -1,7 +1,7 @@
 import React from 'react';
 import '@testing-library/jest-dom/extend-expect'
 
-import { cleanup, getByText, render } from '@testing-library/react'
+import { cleanup, render } from '@testing-library/react'
 
 import Projects from '../Projects'
 
@@ -31,6 +31,12 @@ describe('DeveloperCard', () => {
         getByText("A new way to consume online content")
         const soon_cards = await findAllByText("Soon")
         expect(soon_cards).toHaveLength(4)
-        
+    })
+
+    it('displays in progress badge correctly', async() =>{
+        const { wrapper } = setup()
+        const { findAllByText } = wrapper
+        const in_progress_badges = await findAllByText('In progress')
+        expect(in_progress_badges).toHaveLength(2)
     })
 })

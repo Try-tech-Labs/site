@@ -10,6 +10,7 @@ interface ProjectProps{
     presentation_image_gradient_color: string,
     description: string,
     background_color: string,
+    in_progress: boolean
 }
 
 export default function ProjectCard(props: ProjectProps){
@@ -53,7 +54,7 @@ export default function ProjectCard(props: ProjectProps){
     return (
         <ProjectCard>
             <div className="card_body">
-                <span>In progress</span>
+                {props.in_progress && <span className="progress_badge">In progress</span>}
                 <NameLabel><p>{props.name || "Soon"}</p></NameLabel>
                 <CardBottom>
                     <div className="description">

@@ -17,21 +17,24 @@ export default function Projects() {
         presentation_image:"https://cdn.theatlantic.com/thumbor/nTObmgixnAr5Gei2QRLcJ1Kl4R8=/438x0:1563x1125/500x500/media/img/mt/2020/05/Webart_TwitterTrump/original.jpg",
         presentation_image_gradient_color:"",
         description:"A tool to get Brazilian trending topics",
-        background_color:"#1CA1F1"
+        background_color:"#1CA1F1",
+        in_progress: true
     }
     var diana_props = {
         name:"D.I.A.N.A",
         presentation_image:Diana,
         presentation_image_gradient_color: "linear-gradient(180deg, #2E0045 0%, #5223C9 100%)",
         description:"A new way to consume online content",
-        background_color:"#5024B5"
+        background_color:"#5024B5",
+        in_progress: true
     }
     var default_props = {
         name:"",
         presentation_image:"",
         presentation_image_gradient_color: "linear-gradient(180deg, #FFFFFF 0%, #0E538C 100%)",
         description:"",
-        background_color:""
+        background_color:"",
+        in_progress: false
     }
     return(
         <div id="page-projects">
