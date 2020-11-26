@@ -14,9 +14,6 @@ interface ProjectProps{
 
 export default function ProjectCard(props: ProjectProps){
 
-    //https://cdn.theatlantic.com/thumbor/nTObmgixnAr5Gei2QRLcJ1Kl4R8=/438x0:1563x1125/500x500/media/img/mt/2020/05/Webart_TwitterTrump/original.jpg
-    //#1CA1F1
-
     const ProjectCard = styled.div`
     width: 230px;
     height: 300px;
