@@ -5,7 +5,7 @@ import NavigationMenu from './components/NavigationMenu';
 
 import './styles/global.css';
 import Developers from './pages/Developers';
-
+import Projects from './pages/Projects';
 
 
 function App() {
@@ -14,6 +14,7 @@ function App() {
       <NavigationMenu useLogo={true} />
       <Landing />
       <Developers />
+      <Projects />
     </div>
   );
 }

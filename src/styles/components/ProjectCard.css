@@ -1,0 +1,33 @@
+.card_body {
+    height: 100%;
+    align-items: center;
+    position: relative;
+    justify-content: center;
+    display: flex; 
+}
+
+
+.description {
+    text-align: center;
+    height: 100%;
+}
+
+.description p {
+    margin-top: 5px;
+}
+
+.progress_badge {
+    position: absolute;
+    color: white;
+    z-index: 9999;
+    top: 10px;
+    right: 20px;
+    font-size: 14px;
+    background-color: green;
+    border: 1px solid lime;
+    border-radius: 5px;
+    width: 6em;
+    text-align: center;
+    box-shadow: -2px 2px 1px 1px darkolivegreen;
+    font-weight: 600;
+}

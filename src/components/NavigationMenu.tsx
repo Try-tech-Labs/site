@@ -15,7 +15,7 @@ export default function NavigationMenu(props: NavigationProps) {
             <div className="menu">
                 <a href="#page-landing">Home</a>
                 <a href="#page-developers">About us</a>
-                <a href="">Our tries</a>
+                <a href="#page-projects">Our tries</a>
                 <a href="">Contribute</a>
             </div>
         </div>
