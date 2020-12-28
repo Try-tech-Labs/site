@@ -28,7 +28,7 @@ describe('DeveloperCard', () => {
         expect(logo.classList.length).toBe(0)
         getByAltText("background top detail")
         getByAltText("background bottom detail")
-        getByAltText("Man front a laptop")
+        getByAltText("Man in front of a laptop")
         getByText("We're a group of friends trying to do cool things.")
         getByText("Our lab to try tech")
     })

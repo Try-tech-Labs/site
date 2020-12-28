@@ -40,57 +40,77 @@
 
 #page-landing .content-wrapper main{
     max-width: 350px;
-    position: relative;
-    right: 100px;
     bottom: 8vh;
 }
 
 #page-landing .content-wrapper main .main-page-logo{
-    position: absolute;
-    left: 4vw;
-    top: 12vh
+    position: relative;
+    left: 12vw;
+    top: 12vh;
 }
 
 #page-landing .content-wrapper main h1{
-    position: absolute;
-    width: 470px;
+    position: relative;
+    width: 5em;
     height: 205px;
-    left: 4vw;
-    top: 301px;
     font-family: Nunito;
     font-style: normal;
     font-weight: bold;
     font-size: 100px;
     line-height: 109px;
     color: #FFFFFF;
+    text-align: right;
 }
 
 #page-landing .content-wrapper main p{
-    position: absolute;
+    position: relative;
     width: 430px;
     height: 75px;
-    left: 4vw;
-    top: 560px;
+    left: 12vw;
     font-family: Nunito;
     font-style: normal;
     font-weight: bold;
-    font-size: 30px;
+    font-size: 38px;
     line-height: 33px;
     color: #FFFFFF;
 }
 
 #page-landing .content-wrapper main .green-dot{
-    position: absolute;
+    position: relative;
     width: 20px;
     height: 20px;
-    left: 450px;
-    top: 480px;
     background: #77CC6D;
+    top: 10em;
+    left: 1em;
 }
 
 #page-landing .content-wrapper main .home-developer{
     position: absolute;
     width: 30vw;
-    left: 35vw;
-    top: 18vh;
+    right: 10vw;
+    top: 15vh;
+}
+
+#page-landing .home_content{
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    width: 98vw;
+    position: absolute;
+    height: 100vh;
+    left: 0;
+}
+
+#page-landing .home_content .grid_column {
+    width: 100%;
+    height: auto;
+    display: block;
+    display: grid;
+    grid-template-rows: repeat(3, 1fr);
+}
+
+#page-landing .home_content .grid_column .text_grid{
+    display: grid;
+    grid-template-columns: 0.6fr 1fr;
+    position: relative;
+    left: 10vw;
 }
