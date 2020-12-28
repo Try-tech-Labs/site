@@ -28,7 +28,7 @@ export default function Developers() {
                 {
                     "name": "The developer",
                     "avatar_image": "https://upload.wikimedia.org/wikipedia/commons/thumb/5/52/LinuxCon_Europe_Linus_Torvalds_03.jpg/200px-LinuxCon_Europe_Linus_Torvalds_03.jpg",
-                    "description": "This guy really know about development. He is a icon of tech.",
+                    "description": "This guy really knows about development. He is an icon of tech.",
                     "twitter_url": "https://twitter.com/linus__torvalds",
                     "linkedin_url": "https://www.linkedin.com/in/linustorvalds/",
                     "github_url": "https://github.com/torvalds",

@@ -29,7 +29,7 @@ function Landing() {
                             <p>We're a group of friends trying to do cool things.</p>
                         </div>
                         <div className="grid_column">
-                            <img src={Developer} alt="Man front a laptop" className="home-developer" />
+                            <img src={Developer} alt="Man in front of a laptop" className="home-developer" />
                         </div>
                     </div>
                 </main>
