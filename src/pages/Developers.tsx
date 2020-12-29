@@ -40,6 +40,9 @@ export default function Developers() {
 
     return (
         <div id="page-developers">
+            <div className="title">
+                <h1>About us</h1>
+            </div>
             <div className="developers">
                 {developers && (
                     developers.map(developer => {

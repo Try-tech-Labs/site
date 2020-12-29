@@ -5,6 +5,7 @@
     display: flex;
     justify-content: center;
     align-items: center;
+    font-family: 'Roboto';
 }
 
 #page-landing .background-top-detail{
@@ -67,9 +68,8 @@
     width: 430px;
     height: 75px;
     left: 12vw;
-    font-family: Nunito;
     font-style: normal;
-    font-weight: bold;
+    font-weight: lighter;
     font-size: 38px;
     line-height: 33px;
     color: #FFFFFF;
@@ -79,6 +79,7 @@
     position: relative;
     width: 20px;
     height: 20px;
+    border-radius: 50px;
     background: #77CC6D;
     top: 10em;
     left: 1em;

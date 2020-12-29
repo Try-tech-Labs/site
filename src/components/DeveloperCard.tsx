@@ -20,10 +20,10 @@ export default function DeveloperCard(props: DeveloperProps){
 
     const getValidDeveloperSkills = (skills:any) => {
         if(skills){
-            const string_skills = skills.map((skill:string) => {
-                return skill+" "
+            const skills_map = skills.map((skill:string) => {
+                return " "+skill
             })
-            return string_skills
+            return skills_map.toString()
         }
         return "N/A"
     }
