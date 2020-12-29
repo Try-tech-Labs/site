@@ -25,17 +25,15 @@
 }
 
 #page-landing .content-wrapper{
-
     width: 100%;
     max-width: 1100px;
-
     height: 100%;
     max-height: 680px;
-
-    display: flex;
-    align-items: flex-start;
+    display: grid;
+    grid-template-rows: 0fr 1fr;
+    align-items: center;
     flex-direction: column;
-    justify-content: space-between;
+    justify-content: center;
 
 }
 
@@ -44,61 +42,54 @@
     bottom: 8vh;
 }
 
-#page-landing .content-wrapper main .main-page-logo{
+#page-landing .content-wrapper .main-page-logo{
     position: relative;
-    left: 12vw;
-    top: 12vh;
 }
 
-#page-landing .content-wrapper main h1{
-    position: relative;
-    width: 5em;
-    height: 205px;
+#page-landing .content-wrapper .main-page-logo img{
+    width: 100%;
+}
+
+#page-landing .content-wrapper h1{
     font-family: Nunito;
     font-style: normal;
     font-weight: bold;
     font-size: 100px;
-    line-height: 109px;
+    line-height: 100px;
     color: #FFFFFF;
-    text-align: right;
+    position: relative;
+    left: 2vw;
 }
 
-#page-landing .content-wrapper main p{
+#page-landing .content-wrapper p{
     position: relative;
+    top: 6vh;
+    left: 2vw;
     width: 430px;
     height: 75px;
-    left: 12vw;
     font-style: normal;
     font-weight: lighter;
-    font-size: 38px;
+    font-size: 26px;
     line-height: 33px;
     color: #FFFFFF;
 }
 
-#page-landing .content-wrapper main .green-dot{
-    position: relative;
-    width: 20px;
-    height: 20px;
-    border-radius: 50px;
-    background: #77CC6D;
-    top: 10em;
-    left: 1em;
+#page-landing .content-wrapper .green-dot{
+    color: #77CC6D;
+    font-size: 100px;
 }
 
-#page-landing .content-wrapper main .home-developer{
+#page-landing .content-wrapper .home-developer{
     position: absolute;
-    width: 30vw;
-    right: 10vw;
-    top: 15vh;
+    position: relative;
+    left: 4vw;
 }
 
 #page-landing .home_content{
     display: grid;
     grid-template-columns: repeat(2, 1fr);
-    width: 98vw;
-    position: absolute;
-    height: 100vh;
-    left: 0;
+    position: relative;
+    height: 98vh;
 }
 
 #page-landing .home_content .grid_column {
@@ -106,12 +97,11 @@
     height: auto;
     display: block;
     display: grid;
-    grid-template-rows: repeat(3, 1fr);
+    grid-template-rows: repeat(2, 1fr);
 }
 
-#page-landing .home_content .grid_column .text_grid{
+#page-landing .home_content .grid_row{
     display: grid;
-    grid-template-columns: 0.6fr 1fr;
+    grid-template-rows: 0fr 1fr;
     position: relative;
-    left: 10vw;
 }

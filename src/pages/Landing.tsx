@@ -14,25 +14,18 @@ function Landing() {
             <img src={BackgroundTopDetail} alt="background top detail" className="background-top-detail"/>
             <img src={BackgroundBottomDetail} alt="background bottom detail" className="background-bottom-detail"/>
             <div className="content-wrapper">
-                <main>
-                    <div className="home_content">
-                        <div className="grid_column">
-                            <div className="main-page-logo">
-                                <SiteLogo className="" width={277} height={166} />
-                            </div>
-                            <div>
-                                <div className="text_grid">
-                                    <h1>Our lab to try tech</h1>
-                                    <div className="green-dot"></div>
-                                </div>
-                            </div>
-                            <p>We're a group of friends trying to do cool things.</p>
-                        </div>
-                        <div className="grid_column">
-                            <img src={Developer} alt="Man in front of a laptop" className="home-developer" />
-                        </div>
+                <div className="main-page-logo">
+                    <SiteLogo className="" width={277} height={166} />
+                </div>
+                <div className="home_content">
+                    <div className="grid_row">
+                        <h1>Our lab to try tech<span className="green-dot">.</span></h1>
+                        <p>We're a group of friends trying to do cool things.</p>
                     </div>
-                </main>
+                    <div>
+                        <img src={Developer} alt="Man in front of a laptop" className="home-developer" />
+                    </div>
+                </div>
             </div>
         </div>
     );

@@ -12,7 +12,7 @@ import Contribute from './pages/Contribute';
 function App() {
   return (
     <div id="content">
-      <NavigationMenu useLogo={true} />
+      <NavigationMenu />
       <Landing />
       <Developers />
       <Projects />
