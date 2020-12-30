@@ -3,7 +3,7 @@ import '@testing-library/jest-dom/extend-expect'
 
 import { cleanup, render } from '@testing-library/react'
 
-import Landing from '../Landing'
+import Landing from '../../pages/Landing'
 
 
 const setup = () => {
@@ -15,7 +15,7 @@ const setup = () => {
 }
 
 
-describe('DeveloperCard', () => {
+describe('Landing page', () => {
 
     afterEach (() => {
         cleanup()

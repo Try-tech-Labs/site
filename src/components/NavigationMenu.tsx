@@ -14,7 +14,7 @@ export default function NavigationMenu() {
             }else{
                 setUseLogo(true)
             }
-        }, 300);         
+        }, 200);         
     }
 
     return (

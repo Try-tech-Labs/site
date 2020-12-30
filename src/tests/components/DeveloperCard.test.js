@@ -3,7 +3,7 @@ import '@testing-library/jest-dom/extend-expect'
 
 import { cleanup, render } from '@testing-library/react'
 
-import DeveloperCard from '../DeveloperCard'
+import DeveloperCard from '../../components/DeveloperCard'
 
 
 const setup = () => {
@@ -38,7 +38,7 @@ describe('DeveloperCard', () => {
         expect(getByTestId("twitter-link").getAttribute("href")).toEqual("https://twitter.com/roddeveloper")
         expect(getByTestId("linkedin-link").getAttribute("href")).toEqual("https://linkedin.com/roddeveloper")
         expect(getByTestId("github-link").getAttribute("href")).toEqual("https://github.com/roddeveloper")
-        getByText('Delphi XGH')
+        getByText('Delphi, XGH')
     })
 
     it('doesnt breaks with null props', () => {

@@ -3,7 +3,7 @@ import '@testing-library/jest-dom/extend-expect'
 
 import { cleanup, render } from '@testing-library/react'
 
-import Projects from '../Projects'
+import Projects from '../../pages/Projects'
 
 const setup = () => {
 
@@ -13,7 +13,7 @@ const setup = () => {
     return {wrapper}
 }
 
-describe('DeveloperCard', () => {
+describe('Projects page', () => {
 
     afterEach (() => {
         cleanup()
