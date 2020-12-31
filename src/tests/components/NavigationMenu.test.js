@@ -53,6 +53,18 @@ describe("DeveloperCard", () => {
     expect(logo.classList.contains("site_menu")).toBe(true);
   });
 
+  it("changes the style of the menu item when its the current page", async () => {
+    const { wrapper } = setup();
+    const { getByText } = wrapper;
+    const about_us_button = getByText("About us");
+    fireEvent.click(about_us_button);
+    await waitFor(() => screen.findByAltText("Web site logo image"));
+    expect(about_us_button.classList.contains("active")).toBeTruthy();
+    expect(getByText("Home").classList.contains("active")).toBeFalsy();
+    expect(getByText("Our tries").classList.contains("active")).toBeFalsy();
+    expect(getByText("Contribute").classList.contains("active")).toBeFalsy();
+  });
+
   it("doesnt breaks when renders without site logo", () => {
     const props = {
       useLogo: false,

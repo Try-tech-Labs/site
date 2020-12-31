@@ -38,3 +38,9 @@
   right: 47vw;
   top: 23px;
 }
+
+#navigation-menu .active {
+  background-color: white;
+  color: #2d0a31;
+  font-weight: bold;
+}
