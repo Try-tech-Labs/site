@@ -89,10 +89,22 @@
     height: 5vh;
 }
 
+#page-contribute .content-wrapper .button_contribute:hover{
+    background-color: white;
+    color: #7700BB;
+}
+
+
 #page-contribute .content-wrapper .button_contribute a {
     text-decoration: none;
     color: white;
 }
+
+#page-contribute .content-wrapper .button_contribute a:hover{
+    background-color: white;
+    color: #7700BB;
+}
+
 
 #page-contribute .contribute_content{
     display: grid;
