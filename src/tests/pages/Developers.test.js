@@ -62,7 +62,7 @@ describe("Developers page", () => {
       ])
     );
     const { wrapper } = setup();
-    const { findByText, getByTestId, getAttribute } = wrapper;
+    const { findByText, getByTestId } = wrapper;
 
     await waitFor(() => {
       expect(getByTestId("avatar").getAttribute("src")).toEqual(

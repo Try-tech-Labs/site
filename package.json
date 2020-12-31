@@ -18,6 +18,7 @@
     "build": "react-scripts build",
     "test": "react-scripts test --env=jsdom-fourteen --watchAll",
     "eject": "react-scripts eject",
+    "lint": "eslint .",
     "format": "prettier --write \"**/*.+(js|jsx|json|css|md)\""
   },
   "eslintConfig": {
