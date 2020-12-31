@@ -1,64 +1,64 @@
 .card {
-    width: 320px;
-    height: 560px;
-    background: #FFFFFF;
-    color: #000;
-    border-radius: 25px;
-    margin: 0 40px 0 40px;
-    text-align: justify;
-    font-family: 'Roboto';
+  width: 320px;
+  height: 560px;
+  background: #ffffff;
+  color: #000;
+  border-radius: 25px;
+  margin: 0 40px 0 40px;
+  text-align: justify;
+  font-family: "Roboto";
 }
 
-.card .avatar_and_links .social_media{
-    display: grid;
-    grid-template-rows: repeat(3, 1fr);
-    align-items: center;
-    justify-content: right;
-    margin-right: 32px;
-    width: 64px;
+.card .avatar_and_links .social_media {
+  display: grid;
+  grid-template-rows: repeat(3, 1fr);
+  align-items: center;
+  justify-content: right;
+  margin-right: 32px;
+  width: 64px;
 }
 
-.card .avatar_and_links{
-    display: grid;
-    grid-template-columns: 3fr 1fr;
+.card .avatar_and_links {
+  display: grid;
+  grid-template-columns: 3fr 1fr;
 }
 
-.card .avatar_and_links .avatar{
-    padding: 10px;
-    width: 219px;
-    border-radius: 50%;
+.card .avatar_and_links .avatar {
+  padding: 10px;
+  width: 219px;
+  border-radius: 50%;
 }
 
-.card .social_media img{
-    width: 61px;
-    height: 64px;
-    margin: 10px 0 10px 0;
+.card .social_media img {
+  width: 61px;
+  height: 64px;
+  margin: 10px 0 10px 0;
 }
 
 .card h1 {
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    font-family: 'Nunito';
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-family: "Nunito";
 }
 
 .card p {
-    width: 300px;
-    height: 90px;
-    margin: 30px auto;
-    font-weight: lighter;
+  width: 300px;
+  height: 90px;
+  margin: 30px auto;
+  font-weight: lighter;
 }
 
-.card .skills{
-    align-items: center;
-    display: grid;
-    grid-template-rows: repeat(2, 1fr);
-    justify-content: center;
-    padding: 10px;
-    font-weight: lighter;
-    text-align: center;
+.card .skills {
+  align-items: center;
+  display: grid;
+  grid-template-rows: repeat(2, 1fr);
+  justify-content: center;
+  padding: 10px;
+  font-weight: lighter;
+  text-align: center;
 }
 
-.card .skills label{
-    font-weight: bolder;
+.card .skills label {
+  font-weight: bolder;
 }

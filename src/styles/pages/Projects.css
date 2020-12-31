@@ -1,39 +1,38 @@
 #page-projects {
-    height: 100vh;
-    background: linear-gradient(180deg, #000000 0%, #2D0A31 100%);
-    font-family: Roboto;
-    font-style: normal;
-    font-weight: normal;
+  height: 100vh;
+  background: linear-gradient(180deg, #000000 0%, #2d0a31 100%);
+  font-family: Roboto;
+  font-style: normal;
+  font-weight: normal;
 
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    display: grid;
-    grid-template-columns: auto;
-    position: relative;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  display: grid;
+  grid-template-columns: auto;
+  position: relative;
 }
 
 .projects {
-    display: grid;
-    grid-template-columns: repeat(3, 1fr);
-    z-index: 999;
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  z-index: 999;
 }
 
 #page-projects .title {
-    margin-top: 120px;
-    font-size: 1.4em;
-    line-height: 59px;
-
+  margin-top: 120px;
+  font-size: 1.4em;
+  line-height: 59px;
 }
 
-.background-left-detail{
-    position: absolute;
-    bottom: 0;
-    left: 0;
+.background-left-detail {
+  position: absolute;
+  bottom: 0;
+  left: 0;
 }
 
-.background-right-detail{
-    position: absolute;
-    bottom: 0;
-    right: 0;
+.background-right-detail {
+  position: absolute;
+  bottom: 0;
+  right: 0;
 }
