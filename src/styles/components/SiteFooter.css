@@ -29,3 +29,18 @@
   font-size: 16px;
   left: 12vw;
 }
+
+.footer_button:hover {
+  background-color: white;
+  color: #7700bb;
+}
+
+.footer_button a {
+  text-decoration: none;
+  color: white;
+}
+
+.footer_button a:hover {
+  background-color: white;
+  color: #7700bb;
+}
