@@ -1,0 +1,31 @@
+.footer {
+  display: grid;
+  grid-template-columns: auto;
+  justify-content: center;
+  align-items: center;
+  background-color: black;
+  height: 4vh;
+}
+
+.footer_content {
+  display: grid;
+  grid-template-columns: 2fr 1fr;
+}
+
+.footer_text {
+  text-align: center;
+  font-size: 16px;
+  position: relative;
+}
+
+.footer_button {
+  background-color: #7700bb;
+  color: white;
+  font-weight: lighter;
+  border: none;
+  border-radius: 15px;
+  width: 130px;
+  position: relative;
+  font-size: 16px;
+  left: 12vw;
+}
