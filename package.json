@@ -17,10 +17,17 @@
     "start": "react-scripts start",
     "build": "react-scripts build",
     "test": "react-scripts test --env=jsdom-fourteen",
-    "eject": "react-scripts eject"
+    "eject": "react-scripts eject",
+    "lint": "eslint .",
+    "format": "prettier --write \"**/*.+(js|jsx|json|css|md)\""
   },
   "eslintConfig": {
     "extends": "react-app"
+  },
+  "prettier": {
+    "singleQuote": false,
+    "printWidth": 80,
+    "semi": true
   },
   "browserslist": {
     "production": [
@@ -39,6 +46,7 @@
     "@types/react": "^16.9.53",
     "@types/react-dom": "^16.9.8",
     "@types/styled-components": "^5.1.4",
-    "jest": "^24.9.0"
+    "jest": "^24.9.0",
+    "prettier": "^2.2.1"
   }
 }

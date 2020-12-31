@@ -1,0 +1,120 @@
+#page-contribute {
+  position: relative;
+  height: 100vh;
+  background-color: #2d0a31;
+  display: grid;
+  grid-template-columns: auto;
+  justify-content: center;
+  align-items: center;
+  font-family: "Roboto";
+}
+
+#page-contribute .content-wrapper {
+  width: 100%;
+  max-width: 1100px;
+  height: 100%;
+  max-height: 680px;
+  display: flex;
+  align-items: flex-start;
+  flex-direction: column;
+  justify-content: space-between;
+}
+
+#page-contribute .background-top-detail {
+  position: absolute;
+  width: 266px;
+  height: 227px;
+  left: 0px;
+  top: 0px;
+}
+
+#page-contribute .background-bottom-detail {
+  position: absolute;
+  width: 369px;
+  height: 171px;
+  right: 0;
+  bottom: 0;
+}
+
+#page-contribute .content-wrapper .main-page-logo {
+  position: relative;
+  left: 12vw;
+  top: 12vh;
+}
+
+#page-contribute .content-wrapper h1 {
+  position: relative;
+  top: 6vh;
+  font-family: "Nunito";
+  font-style: normal;
+  font-weight: bold;
+  font-size: 120px;
+  line-height: 1em;
+  color: #ffffff;
+}
+
+#page-contribute .content-wrapper p {
+  position: relative;
+  top: 10vh;
+  font-style: normal;
+  font-weight: lighter;
+  font-size: 24px;
+  line-height: 36px;
+  color: #ffffff;
+}
+
+#page-contribute .content-wrapper .question-mark {
+  position: relative;
+  top: 2vh;
+  left: 1vw;
+}
+
+#page-contribute .content-wrapper .contribute-science {
+  position: relative;
+  width: 100%;
+  top: 4vh;
+}
+
+#page-contribute .content-wrapper .button_contribute {
+  position: relative;
+  width: 370px;
+  left: 8vw;
+  top: 12vh;
+  background-color: #7700bb;
+  color: white;
+  font-size: 26px;
+  font-weight: lighter;
+  border: none;
+  border-radius: 15px;
+  height: 5vh;
+}
+
+#page-contribute .content-wrapper .button_contribute:hover {
+  background-color: white;
+  color: #7700bb;
+}
+
+#page-contribute .content-wrapper .button_contribute a {
+  text-decoration: none;
+  color: white;
+}
+
+#page-contribute .content-wrapper .button_contribute a:hover {
+  background-color: white;
+  color: #7700bb;
+}
+
+#page-contribute .contribute_content {
+  display: grid;
+  grid-template-rows: repeat(2, 1fr);
+  position: relative;
+}
+
+#page-contribute .contribute_content .grid_row {
+  display: flex;
+}
+
+#page-contribute .contribute_content .grid_column {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+}

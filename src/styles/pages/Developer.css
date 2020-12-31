@@ -1,13 +1,27 @@
 #page-developers {
-    height: 100vh;
-    background: linear-gradient(180deg, #2D0A31 0%, #000000 100%);
-
-    display: flex;
-    justify-content: center;
-    align-items: center;
+  height: 100vh;
+  background: linear-gradient(180deg, #2d0a31 0%, #000000 100%);
+  justify-content: center;
+  align-items: center;
+  display: grid;
+  grid-template-columns: auto;
+  position: relative;
+  font-family: "Roboto";
 }
 
-#page-developers .developers{
-    display: grid;
-    grid-template-columns: repeat(3, 1fr);
+#page-developers .developers {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+}
+
+#page-developers .title {
+  margin-top: 120px;
+  font-size: 1.4em;
+  line-height: 59px;
+  width: 100%;
+}
+
+#page-developers .title h1 {
+  width: 18vw;
+  margin-left: 120px;
 }
