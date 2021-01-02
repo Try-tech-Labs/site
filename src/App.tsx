@@ -1,12 +1,13 @@
 import React from 'react';
 
-import Landing from './pages/Landing';
-import NavigationMenu from './components/NavigationMenu';
-
 import './styles/global.css';
+
+import Landing from './pages/Landing';
 import Developers from './pages/Developers';
 import Projects from './pages/Projects';
 import Contribute from './pages/Contribute';
+import NavigationMenu from './components/NavigationMenu';
+import SiteFooter from './components/SiteFooter';
 
 
 function App() {
@@ -17,6 +18,7 @@ function App() {
       <Developers />
       <Projects />
       <Contribute />
+      <SiteFooter />
     </div>
   );
 }
