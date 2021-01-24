@@ -16,8 +16,8 @@ interface ProjectProps{
 export default function ProjectCard(props: ProjectProps){
 
     const ProjectCard = styled.div`
-    width: 230px;
-    height: 300px;
+    width: 280px;
+    height: 420px;
     background: ${props.background_color || "#62478C"};
     color: #000;
     border-radius: 25px;
