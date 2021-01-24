@@ -26,7 +26,7 @@ describe("Projects page", () => {
     getByText("D.I.A.N.A");
     getByText("A new way to consume online content");
     const soon_cards = await findAllByText("Soon");
-    expect(soon_cards).toHaveLength(4);
+    expect(soon_cards).toHaveLength(1);
   });
 
   it("displays in progress badge correctly", async () => {
