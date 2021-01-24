@@ -17,10 +17,11 @@
   display: grid;
   grid-template-columns: repeat(3, 1fr);
   z-index: 999;
+  height: 100%;
 }
 
 #page-projects .title {
-  margin-top: 120px;
+  margin-top: 100px;
   font-size: 1.4em;
   line-height: 59px;
 }

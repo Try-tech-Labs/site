@@ -47,9 +47,6 @@ export default function Projects() {
                 <ProjectCard {...trends_props} />
                 <ProjectCard {...diana_props} />
                 <ProjectCard {...default_props} />
-                <ProjectCard {...default_props} />
-                <ProjectCard {...default_props} />
-                <ProjectCard {...default_props} />
             </div>
         </div>
     )
