@@ -46,8 +46,8 @@ describe("DeveloperCard", () => {
     const { getByAltText, getByText } = wrapper;
     const about_us_button = getByText("About us");
     fireEvent.click(about_us_button);
-    await waitFor(() => screen.findByAltText("Web site logo image"));
-    const logo = getByAltText("Web site logo image");
+    await waitFor(() => screen.findByAltText("Web site logo"));
+    const logo = getByAltText("Web site logo");
     expect(logo.getAttribute("width")).toEqual("162");
     expect(logo.getAttribute("height")).toEqual("70");
     expect(logo.classList.contains("site_menu")).toBe(true);
@@ -58,7 +58,7 @@ describe("DeveloperCard", () => {
     const { getByText } = wrapper;
     const about_us_button = getByText("About us");
     fireEvent.click(about_us_button);
-    await waitFor(() => screen.findByAltText("Web site logo image"));
+    await waitFor(() => screen.findByAltText("Web site logo"));
     expect(about_us_button.classList.contains("active")).toBeTruthy();
     expect(getByText("Home").classList.contains("active")).toBeFalsy();
     expect(getByText("Our tries").classList.contains("active")).toBeFalsy();

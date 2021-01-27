@@ -25,9 +25,10 @@ const getOrganizationMembersName = async (organization:string) => {
         org: organization,
       });
     let members = response.data.filter((item) => {
-        if(item.login != "admin-trytechlabs"){
+        if(item.login !== "admin-trytechlabs"){
             return item
         }
+        return null
     })
     return members.map(member => {
         return member.login;
@@ -51,9 +52,9 @@ const removeBioLinks = (bio:string) => {
     if(!bio)
         return bio
     const link_start = bio.search('https://')
-    if(link_start){
+    if(link_start > 0){
         return bio.substring(0, link_start);
-    }   
+    }
     return bio 
 }
 

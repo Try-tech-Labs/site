@@ -17,8 +17,8 @@ describe("Website footer", () => {
 
   it("renders with correct information", () => {
     const { wrapper } = setup();
-    const { getByText } = wrapper;
-    getByText("Made with 💜 by TryTechLabs");
+    const { getByText, getByTestId } = wrapper;
+    getByTestId("footer-text");
     getByText("Back to home");
   });
 });

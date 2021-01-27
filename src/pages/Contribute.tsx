@@ -32,7 +32,7 @@ export default function Contribute() {
                             </div>
                             <div>
                                 <button className="button_contribute">
-                                    <a href="https://github.com/Try-tech-Labs" target="_blank">
+                                    <a href="https://github.com/Try-tech-Labs" target="_blank" rel="noopener noreferrer">
                                         Access now our github page!
                                     </a>
                                 </button>
