@@ -6,7 +6,7 @@ export default function SiteFooter(){
     return (
         <div className="footer">
             <div className="footer_content">
-                <h3 className="footer_text">Made with 💜 by TryTechLabs</h3>
+                <h3 data-testid="footer-text" className="footer_text">Made with <span role="img" aria-label="heart">💜</span> by TryTechLabs</h3>
                 <button className="footer_button"><a href="#page-landing">Back to home</a></button>
             </div>
         </div>

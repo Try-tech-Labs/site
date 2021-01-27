@@ -43,11 +43,11 @@ export default function DeveloperCard(props: DeveloperProps){
     return (
         <div className="card">
             <div className="avatar_and_links">
-                <img data-testid="avatar" className="avatar" src={getValidAvatarImage(props.avatar_image)} alt="Developer avatar image"/>
+                <img data-testid="avatar" className="avatar" src={getValidAvatarImage(props.avatar_image)} alt="Developer avatar"/>
                 <div className="social_media">
-                    <a data-testid="twitter-link" target="_blank" href={props.twitter_url}><img src={Twitter} alt="Twitter logo"/></a>
-                    <a data-testid="linkedin-link" target="_blank" href={props.linkedin_url}><img src={LinkedIn} alt="LinkedIn logo"/></a>
-                    <a data-testid="github-link" target="_blank" href={props.github_url}><img src={Github} alt="Githubt logo"/></a>
+                    <a data-testid="twitter-link" target="_blank" rel="noopener noreferrer" href={props.twitter_url}><img src={Twitter} alt="Twitter logo"/></a>
+                    <a data-testid="linkedin-link" target="_blank" rel="noopener noreferrer" href={props.linkedin_url}><img src={LinkedIn} alt="LinkedIn logo"/></a>
+                    <a data-testid="github-link" target="_blank" rel="noopener noreferrer" href={props.github_url}><img src={Github} alt="Githubt logo"/></a>
                 </div>
             </div>
             <h1 data-testid="name">{getValidDeveloperName(props.name)}</h1>

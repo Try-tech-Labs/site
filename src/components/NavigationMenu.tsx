@@ -1,4 +1,4 @@
-import React, { useEffect, useState } from 'react';
+import React, { useState } from 'react';
 
 import '../styles/components/NavigationMenu.css';
 
@@ -9,7 +9,7 @@ export default function NavigationMenu() {
     const [currentPage, setCurrentPage] = useState('page-landing');
 
     const isActive = (element_id:string) =>{
-        if(element_id == currentPage){
+        if(element_id === currentPage){
             return "active"
         }
         return ""
@@ -17,7 +17,7 @@ export default function NavigationMenu() {
     
     const handlePageChange = (pageToGo: String) => {
         setTimeout(() => {
-            if (pageToGo == "home"){
+            if (pageToGo === "home"){
                 setUseLogo(false)
             }else{
                 setUseLogo(true)
