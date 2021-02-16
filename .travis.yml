@@ -3,15 +3,52 @@ dist: "xenial"
 language: node_js
 node_js:
   - "12"
+
 before_script:
   - sudo apt-get install curl
   - curl -sS https://dl.yarnpkg.com/debian/pubkey.gpg | sudo apt-key add -
   - echo "deb https://dl.yarnpkg.com/debian/ stable main" | sudo tee /etc/apt/sources.list.d/yarn.list
   - sudo apt update && sudo apt install yarn
-  - yarn install -g 
+  - yarn install -g
+
 cache:
   directories:
     - node_modules
-script:
-    - yarn lint
-    - yarn test
+
+jobs:
+  include:
+
+    - stage: validate
+      script:
+        - yarn lint
+        - yarn test
+
+    - stage: deploy
+      if: tag IS present AND tag IS NOT blank
+      before_deploy:
+        - yarn build
+        - cp appspec.yml build
+        - zip -r latest build/*
+        - mkdir -p upload_dir
+        - mv latest.zip upload_dir/latest.zip
+      deploy:
+        - provider: s3
+          skip_cleanup: true
+          access_key_id: $AWS_ACCESS_KEY
+          secret_access_key: $AWS_SECRET_KEY
+          local_dir: upload_dir
+          on: &correct_target
+            tags: true
+          bucket: try-tech-lab
+          region: sa-east-1
+        - provider: codedeploy
+          skip_cleanup: true
+          access_key_id: $AWS_ACCESS_KEY
+          secret_access_key: $AWS_SECRET_KEY
+          bucket: try-tech-lab
+          key: latest.zip
+          bundle_type: zip
+          application: Try-Tech-Lab
+          deployment_group: Try-Tech-Lab
+          region: sa-east-1
+          on: *correct_target
